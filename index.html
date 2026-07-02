@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tryks — Legal</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #06090B; color: #FFFFFF;
+      min-height: 100vh; margin: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .brand { color: #C6F24E; font-size: 56px; font-weight: 900; letter-spacing: -2px; margin-bottom: 8px; }
+    .sub { color: #A0B0BB; font-size: 16px; margin-bottom: 36px; text-align: center; max-width: 420px; line-height: 1.5; }
+    .langs { display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 360px; }
+    .langs a {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: #0D1317; border: 1px solid #1E2D35;
+      color: #FFFFFF; text-decoration: none;
+      padding: 16px 20px; border-radius: 12px;
+      font-size: 16px; font-weight: 600;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .langs a:hover { border-color: #C6F24E; background: #0F1B1F; }
+    .links { margin-top: 12px; font-size: 13px; color: #7C8A95; text-align: center; }
+    .links a { color: #7C8A95; text-decoration: underline; }
+  </style>
+  <script>
+    // Auto-detect: redireciona pra pasta do idioma do browser; só PT/EN por enquanto.
+    // Quem voltar pra raiz manualmente ainda vê o picker (o redirect só ocorre se vier sem ?stay).
+    (function () {
+      try {
+        if (location.search.indexOf('stay') !== -1) return;
+        var lang = (navigator.language || 'en').toLowerCase();
+        // Idiomas suportados pelo site.
+        var supported = ['pt', 'en', 'es', 'it', 'fr', 'de', 'nl', 'ja', 'ru', 'ko', 'zh', 'id', 'tr', 'pl', 'ar'];
+        var pick = 'en';
+        for (var i = 0; i < supported.length; i++) {
+          if (lang.indexOf(supported[i]) === 0) { pick = supported[i]; break; }
+        }
+        location.replace('./' + pick + '/');
+      } catch (e) { /* fica no picker */ }
+    })();
+  </script>
+</head>
+<body>
+  <div class="brand">TRYKS</div>
+  <p class="sub">Choose your language to read the Privacy Policy and Terms of Use.</p>
+  <div class="langs">
+    <a href="./pt/">🇧🇷 Português</a>
+    <a href="./en/">🇬🇧 English</a>
+    <a href="./es/">🇪🇸 Español</a>
+    <a href="./it/">🇮🇹 Italiano</a>
+    <a href="./fr/">🇫🇷 Français</a>
+    <a href="./de/">🇩🇪 Deutsch</a>
+    <a href="./nl/">🇳🇱 Nederlands</a>
+    <a href="./ja/">🇯🇵 日本語</a>
+    <a href="./ru/">🇷🇺 Русский</a>
+    <a href="./ko/">🇰🇷 한국어</a>
+    <a href="./zh/">🇨🇳 中文</a>
+    <a href="./id/">🇮🇩 Bahasa Indonesia</a>
+    <a href="./tr/">🇹🇷 Türkçe</a>
+    <a href="./pl/">🇵🇱 Polski</a>
+    <a href="./ar/">🇸🇦 العربية</a>
+  </div>
+  <p class="links">
+    <a href="mailto:info@tryks.app">info@tryks.app</a> &middot;
+    <a href="mailto:privacy@tryks.app">privacy@tryks.app</a>
+  </p>
+</body>
+</html>
