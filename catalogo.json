@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "kite-freestyle-basico",
+    "activity": "Kitesurf",
+    "description": "Primeiros saltos e handle pass, passo a passo",
+    "author": "@ridewithlu",
+    "videoCount": 22,
+    "tags": ["pop", "handle pass", "kiteloop", "aterrissagem"],
+    "exportDate": "2026-06-28"
+  },
+  {
+    "slug": "skate-street-fundamentos",
+    "activity": "Skate",
+    "description": "Ollie, shove-it e as primeiras manobras de street",
+    "author": "@marcosk8",
+    "videoCount": 31,
+    "tags": ["ollie", "shove-it", "kickflip", "manual"],
+    "exportDate": "2026-06-15"
+  },
+  {
+    "slug": "surf-manobras-intermediario",
+    "activity": "Surf",
+    "description": "Cutback, floater e batida de lip para evoluir",
+    "author": "@ana.surfs",
+    "videoCount": 17,
+    "tags": ["cutback", "floater", "lip", "bottom turn"],
+    "exportDate": "2026-05-30"
+  },
+  {
+    "slug": "yoga-mobilidade-diaria",
+    "activity": "Yoga",
+    "description": "Sequências curtas de mobilidade para o dia a dia",
+    "author": "@vida.flow",
+    "videoCount": 14,
+    "tags": ["mobilidade", "quadril", "coluna", "respiração"],
+    "exportDate": "2026-05-12"
+  },
+  {
+    "slug": "escalada-tecnica-pes",
+    "activity": "Escalada",
+    "description": "Técnica de pés e transferência de peso na parede",
+    "author": "@bloco.beta",
+    "videoCount": 19,
+    "tags": ["footwork", "flagging", "heel hook", "equilíbrio"],
+    "exportDate": "2026-04-27"
+  },
+  {
+    "slug": "violao-dedilhado",
+    "activity": "Violão",
+    "description": "Padrões de dedilhado do básico ao intermediário",
+    "author": "@seis.cordas",
+    "videoCount": 25,
+    "tags": ["dedilhado", "fingerstyle", "arpejo", "ritmo"],
+    "exportDate": "2026-04-10"
+  }
+]

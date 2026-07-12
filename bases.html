@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bases — Tryks</title>
+  <meta name="description" content="Bases prontas para importar no Tryks: listas de vídeos com tags e organização, criadas pela comunidade. Importe com um toque.">
+  <link rel="canonical" href="https://tryks.app/bases.html">
+  <link rel="alternate" hreflang="pt" href="https://tryks.app/bases.html">
+  <link rel="alternate" hreflang="x-default" href="https://tryks.app/bases.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tryks">
+  <meta property="og:title" content="Bases — Tryks">
+  <meta property="og:description" content="Bases prontas para importar no Tryks: listas de vídeos com tags e organização. Importe com um toque.">
+  <meta property="og:image" content="https://tryks.app/assets/tryks_feature_graphic_1024x500.png">
+  <meta property="og:url" content="https://tryks.app/bases.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#06090B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/tryks_playstore_512.png">
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body data-root="." data-title-key="meta.bases.title" data-desc-key="meta.bases.description">
+  <a class="skip-link" href="#conteudo" data-i18n="nav.skip">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-link" href="./" aria-label="Tryks — início">
+        <img src="assets/tryks-wordmark.png" alt="Tryks" data-i18n-alt="nav.logoAlt" width="470" height="146">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menu" data-i18n-aria="nav.menuOpen">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-menu" aria-label="Navegação principal">
+        <a href="index.html#como-funciona" data-i18n="nav.how">Como funciona</a>
+        <a href="index.html#recursos" data-i18n="nav.features">Recursos</a>
+        <a href="bases.html" aria-current="page" data-i18n="nav.bases">Bases</a>
+        <a href="legal/pt/" data-i18n="nav.privacy">Privacidade</a>
+        <a class="nav-cta" href="index.html#download" data-i18n="nav.download">Baixar o app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== HERO DA PÁGINA ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <div data-reveal>
+          <span class="hero-eyebrow" data-i18n="bases.hero.eyebrow">Bases</span>
+          <h1 data-i18n="bases.hero.title">Bibliotecas prontas para importar</h1>
+          <p class="section-sub" data-i18n="bases.hero.sub">Uma base é uma lista de vídeos exportada do Tryks — um arquivo JSON com os links, tags e organização. Importe com um toque e comece a estudar sem partir do zero.</p>
+
+          <div class="import-steps">
+            <span class="import-step"><b>1</b><span data-i18n="bases.hero.s1">Toque em “Importar no Tryks”</span></span>
+            <span class="import-step"><b>2</b><span data-i18n="bases.hero.s2">O app abre e mostra o que vem na base</span></span>
+            <span class="import-step"><b>3</b><span data-i18n="bases.hero.s3">Confirme — e boa sessão de estudo</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BASES MODELO (curadas) ===================== -->
+    <section class="section" id="modelo" style="padding-top:40px">
+      <div class="container">
+        <div data-reveal>
+          <span class="section-label" data-i18n="bases.curated.label">Bases modelo</span>
+          <h2 class="section-title" data-i18n="bases.curated.title">Comece por aqui</h2>
+          <p class="section-sub" data-i18n="bases.curated.sub">Bases oficiais de demonstração, para sentir o Tryks com a biblioteca já cheia.</p>
+        </div>
+
+        <div class="curated-grid">
+          <article class="base-card" data-reveal>
+            <span class="base-activity"><i style="--c:#00BCD4"></i>Surf</span>
+            <h3>Fundamentos do surf</h3>
+            <p>Do remar ao drop: os primeiros movimentos para pegar as ondas iniciais com segurança.</p>
+            <div class="base-tags">
+              <span class="tag-chip">remada</span>
+              <span class="tag-chip">drop</span>
+              <span class="tag-chip">cavada</span>
+              <span class="tag-chip">postura</span>
+            </div>
+            <div class="base-meta">
+              <span><strong>14</strong>&nbsp;<span data-i18n="bases.videos">vídeos</span></span>
+            </div>
+            <a class="btn-lime" href="index.html#download" data-import-json="demo-surf.json">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              <span data-i18n="bases.import">Importar no Tryks</span>
+            </a>
+          </article>
+
+          <article class="base-card" data-reveal>
+            <span class="base-activity"><i style="--c:#AB47BC"></i>Violão</span>
+            <h3>Primeiros acordes</h3>
+            <p>Uma trilha de vídeos curtos para sair do zero: acordes maiores, troca e ritmo básico.</p>
+            <div class="base-tags">
+              <span class="tag-chip">acordes</span>
+              <span class="tag-chip">ritmo</span>
+              <span class="tag-chip">troca</span>
+              <span class="tag-chip">afinação</span>
+            </div>
+            <div class="base-meta">
+              <span><strong>18</strong>&nbsp;<span data-i18n="bases.videos">vídeos</span></span>
+            </div>
+            <a class="btn-lime" href="index.html#download" data-import-json="demo-violao.json">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              <span data-i18n="bases.import">Importar no Tryks</span>
+            </a>
+          </article>
+
+          <article class="base-card" data-reveal>
+            <span class="base-activity"><i style="--c:#5FD08A"></i>Yoga</span>
+            <h3>Yoga para começar</h3>
+            <p>Posturas essenciais e respiração, em vídeos que você pode revisar em câmera lenta.</p>
+            <div class="base-tags">
+              <span class="tag-chip">respiração</span>
+              <span class="tag-chip">saudação ao sol</span>
+              <span class="tag-chip">equilíbrio</span>
+            </div>
+            <div class="base-meta">
+              <span><strong>12</strong>&nbsp;<span data-i18n="bases.videos">vídeos</span></span>
+            </div>
+            <a class="btn-lime" href="index.html#download" data-import-json="demo-yoga.json">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              <span data-i18n="bases.import">Importar no Tryks</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BASES DA COMUNIDADE ===================== -->
+    <section class="section" id="comunidade" style="padding-top:24px">
+      <div class="container">
+        <div data-reveal>
+          <span class="section-label" data-i18n="bases.community.label">Comunidade</span>
+          <h2 class="section-title" data-i18n="bases.community.title">Bases enviadas por usuários</h2>
+          <p class="section-sub" data-i18n="bases.community.sub">Curadas manualmente antes de entrar no catálogo.</p>
+        </div>
+
+        <div class="catalog-controls" data-reveal>
+          <input type="search" id="base-search" placeholder="Buscar base, autor ou tag…"
+                 data-i18n-ph="bases.search.placeholder" aria-label="Buscar bases" data-i18n-aria="bases.search.aria">
+          <select id="base-activity" aria-label="Filtrar por atividade" data-i18n-aria="bases.filter.aria">
+            <option value="" data-i18n="bases.filter.all">Todas as atividades</option>
+          </select>
+          <select id="base-sort" aria-label="Ordenar bases" data-i18n-aria="bases.sort.aria">
+            <option value="recent" data-i18n="bases.sort.recent">Mais recentes</option>
+            <option value="videos" data-i18n="bases.sort.videos">Mais vídeos</option>
+            <option value="az" data-i18n="bases.sort.az">Descrição A→Z</option>
+          </select>
+        </div>
+
+        <p id="catalog-loading" class="catalog-state" data-i18n="bases.loading">Carregando o catálogo…</p>
+        <p id="catalog-error" class="catalog-state" hidden data-i18n="bases.error">Não deu para carregar o catálogo agora. Tente de novo mais tarde.</p>
+        <p id="catalog-empty" class="catalog-state" hidden data-i18n="bases.empty">Nenhuma base encontrada. Tente outra busca.</p>
+
+        <!-- Tabela (desktop) -->
+        <div class="catalog-table-wrap" data-reveal>
+          <table class="catalog-table">
+            <thead>
+              <tr>
+                <th data-i18n="bases.th.activity">Atividade</th>
+                <th data-i18n="bases.th.description">Descrição</th>
+                <th data-i18n="bases.th.author">Enviada por</th>
+                <th data-i18n="bases.th.count">Vídeos</th>
+                <th data-i18n="bases.th.tags">Tags</th>
+                <th data-i18n="bases.th.date">Exportada em</th>
+                <th data-i18n="bases.th.action">Ação</th>
+              </tr>
+            </thead>
+            <tbody id="catalog-body"></tbody>
+          </table>
+        </div>
+
+        <!-- Cards (mobile) -->
+        <div id="catalog-cards"></div>
+
+        <p class="catalog-note">
+          <a data-mail href="mailto:contato@tryks.app" data-i18n="bases.report">Reportar base / solicitar remoção</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== ENVIE A SUA (Tally) ===================== -->
+    <section class="section" id="enviar" style="padding-top:24px">
+      <div class="container">
+        <div class="submit-panel" data-reveal>
+          <span class="section-label" data-i18n="bases.submit.label">Envie a sua</span>
+          <h2 class="section-title" data-i18n="bases.submit.title">Seja um criador oficial</h2>
+          <p class="section-sub" data-i18n="bases.submit.text">Montou uma base caprichada? Exporte o JSON no Tryks (Configurações → Bases → Exportar) e envie pelo formulário. As melhores entram no catálogo, com o seu @ nos créditos.</p>
+
+          <div class="tally-box">
+            <div id="tally-slot"></div>
+            <div id="tally-soon" class="tally-soon">
+              <p style="margin-bottom:8px" data-i18n="bases.submit.soon">O formulário de envio abre em breve. Enquanto isso, mande sua base por e-mail:</p>
+              <a data-mail data-mail-text href="mailto:contato@tryks.app">contato@tryks.app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/tryks-wordmark.png" alt="Tryks" data-i18n-alt="nav.logoAlt" width="470" height="146">
+          <p data-i18n="footer.tagline">Aprenda com seus vídeos favoritos.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.product">Produto</h4>
+          <ul>
+            <li><a href="index.html#como-funciona" data-i18n="nav.how">Como funciona</a></li>
+            <li><a href="index.html#recursos" data-i18n="nav.features">Recursos</a></li>
+            <li><a href="bases.html" data-i18n="nav.bases">Bases</a></li>
+            <li><a href="index.html#download" data-i18n="nav.download">Baixar o app</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <ul>
+            <li><a href="legal/pt/" data-i18n="footer.privacyPolicy">Política de privacidade</a></li>
+            <li><a href="legal/pt/terms.html" data-i18n="footer.terms">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contato</h4>
+          <ul>
+            <li><a data-mail data-mail-text href="mailto:contato@tryks.app">contato@tryks.app</a></li>
+          </ul>
+          <div class="lang-wrap" hidden style="margin-top:18px">
+            <h4 data-i18n="footer.language">Idioma</h4>
+            <select class="lang-select" aria-label="Idioma"></select>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer" data-i18n="footer.disclaimer">Os vídeos pertencem aos seus criadores e às plataformas de origem. O Tryks não baixa nem hospeda arquivos de vídeo — eles tocam pelos players oficiais. Instagram, YouTube e TikTok são marcas registradas dos seus respectivos donos.</p>
+        <p>© <span id="year">2026</span> <span data-i18n="footer.rights">Tryks. Todos os direitos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== TEMPLATES (linha e card do catálogo) ===================== -->
+  <template id="tpl-base-row">
+    <tr>
+      <td class="b-activity"></td>
+      <td class="b-desc"></td>
+      <td class="b-author"></td>
+      <td class="b-count"></td>
+      <td class="b-tags"></td>
+      <td class="b-date"></td>
+      <td>
+        <a class="btn-lime" href="#" data-import-json="">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          <span data-i18n="bases.import">Importar no Tryks</span>
+        </a>
+      </td>
+    </tr>
+  </template>
+
+  <template id="tpl-base-card">
+    <div class="catalog-card">
+      <div class="cc-top">
+        <span class="b-activity"></span>
+        <span class="b-date"></span>
+      </div>
+      <div class="b-desc"></div>
+      <div class="cc-meta">
+        <span class="b-author"></span>
+        <span><strong class="b-count"></strong>&nbsp;<span data-i18n="bases.videos">vídeos</span></span>
+      </div>
+      <div class="b-tags"></div>
+      <a class="btn-lime" href="#" data-import-json="">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        <span data-i18n="bases.import">Importar no Tryks</span>
+      </a>
+    </div>
+  </template>
+
+  <!-- ===================== MODAL DE FALLBACK (deep link) ===================== -->
+  <div class="modal" id="import-fallback" hidden role="dialog" aria-modal="true" aria-labelledby="fallback-title">
+    <div class="modal-box">
+      <h3 id="fallback-title" data-i18n="fallback.title">Abrindo o Tryks…</h3>
+      <p data-i18n="fallback.text">Se nada aconteceu, você ainda não tem o app no aparelho.</p>
+      <div class="store-badges">
+        <a class="badge-store" data-store="play" href="index.html#download">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#00C4FF" d="M3.06 1.62 13.5 12 3.06 22.38a2.34 2.34 0 0 1-.66-1.68V3.3c0-.66.25-1.25.66-1.68Z"/>
+            <path fill="#FFCE00" d="m13.5 12 3.42-3.4 3.9 2.22c1.42.8 1.42 2.55 0 3.36l-3.9 2.22L13.5 12Z"/>
+            <path fill="#FF3A44" d="M3.06 22.38 13.5 12l3.42 3.4-11.6 6.6c-.8.45-1.62.3-2.26-.62Z"/>
+            <path fill="#00E575" d="M3.06 1.62c.64-.92 1.46-1.07 2.26-.62l11.6 6.6L13.5 12 3.06 1.62Z"/>
+          </svg>
+          <span class="badge-txt">
+            <small class="badge-kicker" data-i18n="store.soonPlay">Em breve no</small>
+            <strong class="badge-name" data-i18n="store.googlePlay">Google Play</strong>
+          </span>
+        </a>
+        <a class="badge-store" data-store="appstore" href="index.html#download">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#FFFFFF" d="M17.05 12.54c-.03-2.55 2.08-3.77 2.17-3.83-1.18-1.73-3.02-1.97-3.68-2-1.56-.16-3.05.92-3.84.92-.8 0-2.02-.9-3.32-.87-1.7.03-3.28 1-4.16 2.53-1.78 3.08-.45 7.64 1.28 10.14.85 1.22 1.85 2.6 3.17 2.55 1.28-.05 1.76-.82 3.3-.82 1.54 0 1.98.82 3.32.8 1.37-.03 2.24-1.24 3.07-2.47.97-1.42 1.37-2.8 1.39-2.87-.03-.01-2.67-1.02-2.7-4.08ZM14.53 4.9c.7-.85 1.18-2.03 1.05-3.2-1.01.04-2.24.67-2.97 1.52-.65.75-1.22 1.95-1.07 3.1 1.13.09 2.28-.57 2.99-1.42Z"/>
+          </svg>
+          <span class="badge-txt">
+            <small class="badge-kicker" data-i18n="store.soonApp">Em breve na</small>
+            <strong class="badge-name" data-i18n="store.appStore">App Store</strong>
+          </span>
+        </a>
+      </div>
+      <p class="fallback-testing" hidden>
+        <span data-i18n="fallback.testing">O Tryks para Android está em teste fechado — peça acesso:</span>
+        <a href="#" data-i18n="fallback.testingLink">Participar do teste</a>
+      </p>
+      <button class="modal-close" data-i18n="fallback.close">Fechar</button>
+    </div>
+  </div>
+</body>
+</html>
