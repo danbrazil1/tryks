@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abrir no Tryks</title>
+  <meta name="description" content="Abra este vídeo no Tryks — organize e aprenda a partir dos seus vídeos favoritos.">
+  <meta name="robots" content="noindex">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #06090B; color: #FFFFFF;
+      min-height: 100vh; margin: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 24px; text-align: center;
+    }
+    .brand { color: #C6F24E; font-size: 64px; font-weight: 900; letter-spacing: -2px; margin-bottom: 12px; }
+    .sub { color: #A0B0BB; font-size: 17px; margin-bottom: 32px; max-width: 460px; line-height: 1.5; }
+    .cta {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: #C6F24E; border: 1px solid #C6F24E;
+      color: #06090B; text-decoration: none;
+      padding: 15px 28px; border-radius: 12px;
+      font-size: 16px; font-weight: 700;
+      transition: opacity 0.15s;
+    }
+    .cta:hover { opacity: 0.88; }
+    .links { margin-top: 28px; font-size: 13px; color: #7C8A95; }
+    .links a { color: #7C8A95; text-decoration: underline; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="brand">TRYKS</div>
+  <p id="sub" class="sub">Abrindo o vídeo no Tryks…</p>
+
+  <!-- Revelado pelo script só no fallback (app não instalado / não abriu). -->
+  <a id="btn-get" class="cta hidden" href="/get">Baixar o Tryks</a>
+
+  <p class="links">
+    <a href="/">tryks.app</a> &middot;
+    <a href="/legal/">Privacidade e Termos</a>
+  </p>
+
+  <script>
+    // ── Página-ponte de VÍDEO ────────────────────────────────────────────────
+    // O app compartilha https://tryks.app/v?url=<URL_ORIGINAL_DO_VIDEO>.
+    //  • App instalado  → tenta o scheme tryks://v?url=… (alias → aba Adicionar,
+    //    ver app/+native-intent.ts). A aba abre com a URL pré-preenchida.
+    //  • Sem o app      → após ~2s cai em /get (detecta aparelho + loja/em breve).
+    // Sem backend, sem tracker: só lê o parâmetro e redireciona.
+
+    (function () {
+      var raw = '';
+      try { raw = new URL(window.location.href).searchParams.get('url') || ''; } catch (e) { raw = ''; }
+
+      // Sem URL de vídeo: manda direto pra baixar o app.
+      if (!raw) { window.location.replace('/get'); return; }
+
+      var deep = 'tryks://v?url=' + encodeURIComponent(raw);
+
+      // Fallback: se em ~2s a página ainda estiver visível, o app não abriu.
+      var caiu = false;
+      var timer = setTimeout(function () {
+        if (caiu) return;
+        var sub = document.getElementById('sub');
+        var btn = document.getElementById('btn-get');
+        if (sub) sub.textContent = 'Não encontramos o Tryks neste aparelho.';
+        if (btn) btn.classList.remove('hidden');
+        // Redireciona pra loja/em-breve (a /get resolve o aparelho).
+        window.location.href = '/get';
+      }, 2000);
+
+      // Se o app abriu, o navegador esconde/descarrega a aba → cancela o fallback.
+      function cancelar() { caiu = true; clearTimeout(timer); }
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') cancelar();
+      });
+      window.addEventListener('pagehide', cancelar);
+      window.addEventListener('blur', cancelar);
+
+      // Dispara a tentativa de abrir o app.
+      window.location.href = deep;
+    })();
+  </script>
+</body>
+</html>
