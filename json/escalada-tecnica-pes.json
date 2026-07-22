@@ -1,0 +1,183 @@
+{
+  "app": "tryks",
+  "version": 5,
+  "exportedAt": "2026-07-22T10:58:39.788Z",
+  "metadata": {
+    "description": "Base de teste — Escalada (4 vídeos)",
+    "exportDate": "2026-07-22T10:58:39.788Z",
+    "appVersion": "1.0.1"
+  },
+  "filtro": {
+    "modalidadesIds": [],
+    "escopo": "tudo"
+  },
+  "modalidades": [
+    {
+      "nome": "Escalada",
+      "cor": "#A1887F"
+    }
+  ],
+  "tags": [],
+  "manobras": [
+    {
+      "url": "https://www.youtube.com/shorts/ydJpyDmAelA",
+      "shortcode": "ydJpyDmAelA",
+      "plataforma": "youtube",
+      "tipo": "short",
+      "clip_inicio": null,
+      "clip_fim": null,
+      "apelido": "Kitesurfing In Paradise 😱 Can’t Get Better Than This 🤯",
+      "dificuldade": null,
+      "status": "a_aprender",
+      "favorito": 1,
+      "notas": "⭐️ Subscribe For Daily Kitesurfing Content ⭐️\n\nRider 🏄🏻‍♂️: https://www.instagram.com/theo_demanez?igsh=eXBodmt4YmdjYW5o\n\n🔥 Instagram 👉🏻 https://www.instagram.com/thekiteshots/ \n🔥 FaceBook 👉🏻 https://www.facebook.com/thekiteshots\n🔥 TikTok👉🏻 https://www.tiktok.com/@thekiteshots \n\nBitcoin Live\n#thekiteshots, #kiteboarding, #kitesurf, #kite, #kiteboard, #kitesurfing, #surf, #watersports, #water, #gopro, #skate, #wakeboarding, #wakesurfing, #wake, #surfing, #waves, #windsurfing, #oceanrodeo, #kiteboarder, #paddleboarding,#ski, #fail, #redbull, #sports, #snowboarding, #beach, #skateboarding, #fails #wakesurf, #shortsfunny, #shortsasmr, #shortsart, #shortscooking, #shortscrochet, #shortsasmr, #shortschallenge, #shortscomplications, #shortsclip, #shortsclip, #shortsdog, #shortsdance, #shorts, #short, #sports #bitcoin",
+      "data_adicionado": "2026-06-03T01:49:39.054Z",
+      "data_status": "2026-07-21T12:13:04.107Z",
+      "autor": "TheKiteShots",
+      "autor_url": "https://www.youtube.com/@thekiteshots",
+      "ig_inline": null,
+      "tiktok_inline": null,
+      "modalidade": "Escalada",
+      "tags": []
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JoA9WMhOBBQ",
+      "shortcode": "JoA9WMhOBBQ",
+      "plataforma": "youtube",
+      "tipo": "video",
+      "clip_inicio": null,
+      "clip_fim": null,
+      "apelido": "How to Kitesurf Upwind",
+      "dificuldade": null,
+      "status": "salvo",
+      "favorito": 1,
+      "notas": "This Kiteboarding tutorial looks at how to ride upwind. It shows the body position, as well as the speed and kite control required to ride upwind well. Upwind kiteboarding is shown in a veriety of angles, with markers showing the wind direction so you can picture what is happening when you kitesurf upwind.\n\nAccess our playlist to watch all tutorials in order:\nhttps://youtube.com/playlist?list=PL41dAinz_9ZeaG5FJ_XU8vyBAE_HL_Cgl",
+      "data_adicionado": "2026-06-03T21:43:38.956Z",
+      "data_status": "2026-07-12T15:27:09.085Z",
+      "autor": "Wingfoil, Kitefoil & Kitesurf College",
+      "autor_url": "https://www.youtube.com/@kitesurfcollege",
+      "ig_inline": null,
+      "tiktok_inline": null,
+      "modalidade": "Escalada",
+      "tags": [],
+      "timestamps": [
+        {
+          "segundos": 2,
+          "descricao": null,
+          "ordem": 2
+        },
+        {
+          "segundos": 8,
+          "descricao": null,
+          "ordem": 0
+        },
+        {
+          "segundos": 167,
+          "descricao": null,
+          "ordem": 3
+        },
+        {
+          "segundos": 210,
+          "descricao": "Grab",
+          "ordem": 1
+        },
+        {
+          "segundos": 219,
+          "descricao": null,
+          "ordem": 5
+        }
+      ],
+      "clips": [
+        {
+          "inicio": 57.11213706866455,
+          "fim": 99.15196077702724,
+          "descricao": null,
+          "ordem": 0
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DDKMjrUiJcz/",
+      "shortcode": "DDKMjrUiJcz",
+      "plataforma": "instagram",
+      "tipo": "reel",
+      "clip_inicio": null,
+      "clip_fim": null,
+      "apelido": null,
+      "dificuldade": null,
+      "status": "a_aprender",
+      "favorito": 1,
+      "notas": "We’ve lost dancing.\n\nThis is the closest I get to putting my dancing shoes on, missing those kite foil sessions. If only I brought the foil to Capetown for these weeks of no wind.\n….\n🎥 @nomadinthewind\n🪁 @corekites 8m Nexus 4 & 700 Vert\n👔 @sooruzofficial GURU PRO 3/2\n#kitesurfing #foil #kiteboarding #corekites #gokiting #sooruz #ridersvision\nVer todos os 92 comentários",
+      "data_adicionado": "2026-06-04T02:03:57.542Z",
+      "data_status": "2026-07-21T12:13:04.107Z",
+      "autor": "@stevenakkersdijk",
+      "autor_url": "https://www.instagram.com/stevenakkersdijk/",
+      "ig_inline": 1,
+      "tiktok_inline": null,
+      "modalidade": "Escalada",
+      "tags": [],
+      "timestamps": [
+        {
+          "segundos": 11,
+          "descricao": null,
+          "ordem": 2
+        },
+        {
+          "segundos": 14,
+          "descricao": null,
+          "ordem": 0
+        }
+      ],
+      "clips": [
+        {
+          "inicio": 4.429211,
+          "fim": 7.429419,
+          "descricao": null,
+          "ordem": 0
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@heinerhofmannkite/video/7651736392103513365",
+      "shortcode": "7651736392103513365",
+      "plataforma": "tiktok",
+      "tipo": "tiktok",
+      "clip_inicio": null,
+      "clip_fim": null,
+      "apelido": null,
+      "dificuldade": null,
+      "status": "a_aprender",
+      "favorito": 1,
+      "notas": "😎 já salva e manda pro amigo, bora evoluir no Kitesurf 🎯 #kitesurf",
+      "data_adicionado": "2026-07-10T21:36:01.194Z",
+      "data_status": "2026-07-12T23:42:15.796Z",
+      "autor": "@Heiner Hofmann",
+      "autor_url": "https://www.tiktok.com/@heinerhofmannkite",
+      "ig_inline": 1,
+      "tiktok_inline": 1,
+      "modalidade": "Escalada",
+      "tags": [],
+      "timestamps": [
+        {
+          "segundos": 12,
+          "descricao": null,
+          "ordem": 0
+        }
+      ],
+      "clips": [
+        {
+          "inicio": 3.542437,
+          "fim": 7.302089,
+          "descricao": null,
+          "ordem": 0
+        },
+        {
+          "inicio": 19.693304,
+          "fim": 25.671604,
+          "descricao": null,
+          "ordem": 1
+        }
+      ]
+    }
+  ]
+}
